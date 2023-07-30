@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;1,300&family=Special+Elite&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'IBM Plex Mono', monospace;
+			font-family: 'Special Elite', cursive;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ffced9;
+		}
+
+		.border {
+			border: 1px solid #ffced9;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #b36b6e;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house" style="color: #d598a3;"></i></i> Home</a>
+		<a id="morning-routine" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-sun" style="color: #d598a3;"></i></i> Morning Routine</a>
+		<a id="night-routine" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-moon" style="color: #d598a3;"></i></i> Night Routine</a>
+		<a id="habits" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-check" style="color: #d598a3;"></i></i> Habits</a>
+		<a id="university" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap" style="color: #d598a3;"></i></i> University</a>
+		<a id="glossary" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-magnifying-glass" style="color: #d598a3;"></i></i> Glossary</a>
+		
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/Rosa-s-cozy-space-3-727a9e77a3f74ec49bdba1b903b5969e", '_blank').focus();
+			else if (id == "morning-routine")
+				window.open("https://www.notion.so/Morning-Routine-2d1237261f6e482192072626c5a710c3", '_blank').focus();
+			else if (id == "night-routine")
+				window.open("https://www.notion.so/Night-Routine-ca5622ec4c494baea7a19afc0959db2b", '_blank').focus();
+			else if (id == "habits")
+				window.open("https://www.notion.so/Habit-Tracker-5e7588bb32ab43d89734015f8cdd6bed", '_blank').focus();
+			else if (id == "university")
+				window.open("https://www.notion.so/Romanticizing-school-29bc4905d556434da39979eb77ea87a3", '_blank').focus();
+			else if (id == "glossary")
+				window.open("https://www.notion.so/06e506def1ec4112874dabee37b6e8ee?v=77c2983789254c7085893a3148810f63", '_blank').focus();
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
