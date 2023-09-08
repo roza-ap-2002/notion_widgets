@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;1,300&family=Special+Elite&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'IBM Plex Mono', monospace;
+			font-family: 'Special Elite', cursive;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #976D57;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ffced9;
+		}
+
+		.border {
+			border: 1px solid #976D57;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #000000;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house" style="color: #976D57;"></i></i> Home</a>
+		<a id="fitness" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-plate-wheat" style="color: #976d57;"></i></i></i></i>Fitness</a>
+		<a id="workout tracker" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-dumbbell" style="color: #976d57;"></i></i></i></i>Workout Tracker</a>
+		<a id="library" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-book" style="color: #976d57;"></i></i></i></i>Library</a>
+    <a id="journal" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-comment-dots" style="color: #976d57;"></i></i></i></i>Journal</a>
+    <a id="mood tracker" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-face-smile" style="color: #976d57;"></i></i></i></i>Mood Tracker</a>
+
+
+
+		
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/Hello-Name-00d464151a9e4325a78e112708ebd010", '_blank').focus();
+			else if (id == "fitness")
+				window.open("https://www.notion.so/Fitness-23426b403c3b40318685b7d22e84c803", '_blank').focus();
+			else if (id == "workout tracker")
+				window.open("https://www.notion.so/Workout-Tracker-e7bdb8d0eac64e748e4f478a070ae584", '_blank').focus();
+			else if (id == "library")
+				window.open("https://www.notion.so/Library-5f5a0375b5c0422b9f1da51542a9de0f", '_blank').focus();
+			else if (id == "journal")
+				window.open("https://www.notion.so/Journal-5f2d47e941c840a69e07cd16743f736e", '_blank').focus();
+      else if (id == "mood tracker")
+				window.open("https://www.notion.so/Mood-Tracker-b204a9006c31492bab378052e5778f85", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
